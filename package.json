@@ -1,0 +1,15 @@
+{
+  "name": "devdash-github-sdk",
+  "version": "1.0.0",
+  "description": "An sdk for github - by the Devdash project",
+  "main": "index.js",
+  "keywords": [
+    "sdk",
+    "github"
+  ],
+  "author": "ewsgit",
+  "license": "MIT",
+  "dependencies": {
+    "undici": "^5.0.0"
+  }
+}
