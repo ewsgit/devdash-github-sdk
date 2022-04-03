@@ -1,5 +1,5 @@
-import GithubUser from "./githubUser";
-import GithubAuthenticatedUser from "./githubAuthenticatedUser";
+import GithubUser from "./githubUser.js";
+import GithubAuthenticatedUser from "./githubAuthenticatedUser.js";
 
 export default class Github {
   token: string = '';
