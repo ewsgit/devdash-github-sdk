@@ -40,8 +40,10 @@ export default class GithubUser {
   }
 
   getPublicRepos() {
-    return new Promise( async ( resolve, reject ) => {
-      // undici.request()
+    return new Promise(  ( resolve, reject ) => {
+      fetch("https://api.github.com/")
+      
+
     } )
   }
 }
