@@ -8,7 +8,7 @@
 ## GithubGist
 
 - [ ] getBody(): string
-- [ ] getUser(): string
+- [ ] getUser(): GithubUser
 - [ ] getTitle(): string
 - [ ] getComments()
     - [ ] getAll()
