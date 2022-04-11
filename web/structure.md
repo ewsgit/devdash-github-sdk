@@ -11,44 +11,46 @@
 - [ ] getUser(): GithubUser
 - [ ] getTitle(): string
 - [ ] getComments()
-    - [ ] getAll()
-        - [ ] getBody(): string
-        - [ ] getUser(): GithubUser
-        - [ ] getCreatedAt(): Date
-        - [ ] getUpdatedAt(): Date
-    - [ ] searchByUsername(username: string)
-        - [ ] getBody(): string
-        - [ ] getUser(): GithubUser
-        - [ ] getCreatedAt(): Date
-        - [ ] getUpdatedAt(): Date
-    - [ ] searchByBody(body: string)
-        - [ ] getBody(): string
-        - [ ] getUser(): GithubUser
-        - [ ] getCreatedAt(): Date
-        - [ ] getUpdatedAt(): Date
+  - [ ] getAll()
+    - [ ] getBody(): string
+    - [ ] getUser(): GithubUser
+    - [ ] getCreatedAt(): Date
+    - [ ] getUpdatedAt(): Date
+  - [ ] searchByUsername(username: string)
+    - [ ] getBody(): string
+    - [ ] getUser(): GithubUser
+    - [ ] getCreatedAt(): Date
+    - [ ] getUpdatedAt(): Date
+  - [ ] searchByBody(body: string)
+    - [ ] getBody(): string
+    - [ ] getUser(): GithubUser
+    - [ ] getCreatedAt(): Date
+    - [ ] getUpdatedAt(): Date
 
 ## GithubUser
 
-- [X] ToRawString(): string
-- [X] ToRawJson(): object
-- [X] getUsername(): string
-- [X] getName(): string
-- [X] getEmail(): string
-- [X] getLocation(): string
-- [X] getBio(): string
-- [X] getBlogUrl(): string
-- [ ] getPublicRepos()
-  - [ ] searchByName(name: string)
-  - [ ] searchByDescription(description: string)
-  - [ ] searchByLanguage(lang: string)
+- [x] ToRawString(): string
+- [x] ToRawJson(): object
+- [x] getUsername(): string
+- [x] getName(): string
+- [x] getEmail(): string
+- [x] getLocation(): string
+- [x] getBio(): string
+- [x] getBlogUrl(): string
+- [x] getPublicRepos()
+  - [x] searchByName(name: string)
+  - [x] searchByDescription(description: string)
+  - [x] searchByLanguage(lang: string)
 - [ ] getPublicGists(): Array<GithubGist>
+  - [ ] searchByBody(description: string)
+  - [ ] searchByName(name: string)
 - [ ] getFollowers()
-    - [ ] count(): number
-    - [ ] getAll(): Array<GithubUser>
-    - [ ] searchByName(name: string)
-    - [ ] searchByEmail(email: string)
-    - [ ] searchByLocation(location: string)
-    - [ ] searchByLanguage(lang: string)
+  - [ ] count(): number
+  - [ ] getAll(): Array<GithubUser>
+  - [ ] searchByName(name: string)
+  - [ ] searchByEmail(email: string)
+  - [ ] searchByLocation(location: string)
+  - [ ] searchByLanguage(lang: string)
 - [ ] getFollowing():
 - [ ] getCreationDate()
 
@@ -61,13 +63,13 @@
 - [ ] getLocation(): string
 - [ ] getBlogUrl(): string
 - [ ] getPublicRepos()
-    - [ ] getAll(): Array<GithubRepository>
-    - [ ] searchByName(name: string): Array<GithubRepository>>
-    - [ ] searchByDescription(description: string): Array<GithubRepository>
-    - [ ] searchByLanguage(lang: string): Array<GithubRepository>
+  - [ ] getAll(): Array<GithubRepository>
+  - [ ] searchByName(name: string): Array<GithubRepository>>
+  - [ ] searchByDescription(description: string): Array<GithubRepository>
+  - [ ] searchByLanguage(lang: string): Array<GithubRepository>
 - [ ] getMembers()
-    - [ ] getAll():Array<GithubUser>
-    - [ ] searchByName(name: string): Array<GithubUser>
+  - [ ] getAll():Array<GithubUser>
+  - [ ] searchByName(name: string): Array<GithubUser>
 
 ## GithubRepository
 
@@ -83,11 +85,11 @@
 - [ ] getCreatedAt(): Date
 - [ ] getUpdatedAt(): Date
 - [ ] getLastCommit()
-    - [ ] getDate(): Date
+  - [ ] getDate(): Date
+  - [ ] getAuthor(): GithubUser
+  - [ ] getMessage(): string
+  - [ ] comments(): Array<GithubComment>
+    - [ ] getBody(): string
     - [ ] getAuthor(): GithubUser
-    - [ ] getMessage(): string
-    - [ ] comments(): Array<GithubComment>
-        - [ ] getBody(): string
-        - [ ] getAuthor(): GithubUser
-        - [ ] getCreatedAt(): Date
-        - [ ]  getUpdatedAt(): Date
+    - [ ] getCreatedAt(): Date
+    - [ ] getUpdatedAt(): Date
