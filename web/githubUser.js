@@ -1,3 +1,5 @@
+import GithubRepository from "./githubRepository";
+import GithubGist from "./githubGist";
 export default class GithubUser {
     userData;
     constructor(userData) {
@@ -29,7 +31,20 @@ export default class GithubUser {
     }
     getPublicRepos() {
         return new Promise((resolve, reject) => {
-            fetch("https://api.github.com/");
+            fetch(`https://api.github.com/users/${this.userData.login}/repos`)
+                .then(res => res.json())
+                .then(res => {
+                resolve([...res.map((repo) => new GithubRepository(repo))]);
+            });
+        });
+    }
+    getPublicGists() {
+        return new Promise((resolve, reject) => {
+            fetch(`https://api.github.com/users/${this.userData.login}/gists`)
+                .then(res => res.json())
+                .then(res => {
+                resolve([...res.map((gist) => new GithubGist(gist))]);
+            });
         });
     }
 }

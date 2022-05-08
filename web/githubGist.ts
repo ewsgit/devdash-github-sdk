@@ -99,7 +99,9 @@ class GithubGistComments {
   getAllComments() {
     fetch(`https://api.github.com/gists/${this.gistId}/comments`, {
       headers: {
-        'Authorization': ghToken
+        // TODO: Add method to get the token from the Github class
+        'Authorization': "[REPLACE ME]"
+      }
     })
   }
 }
